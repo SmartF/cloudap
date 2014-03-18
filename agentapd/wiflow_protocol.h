@@ -66,7 +66,8 @@ enum wiflow_commands
     WIFLOW_INIT_CAPA_REQUEST,
     WIFLOW_SET_COUNTRY,
     WPA_GET_HW_MODE_REQUEST,
-    REMOTE_HW_MODE
+    REMOTE_HW_MODE,
+    WPA_SUP_EVENT
 }; 
 
 struct wiflow_pdu_element
@@ -150,7 +151,7 @@ int wpa_i802_set_wds_sta_format(char *pdu, int *p_size, const u8 *addr, int aid,
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_i802_set_wds_sta_parser(char *pdu, int p_size, u8 *addr, int * aid, int *val, char *bridge_ifname);
+int wpa_i802_set_wds_sta_parser(char *pdu, int p_size, u8 **addr, int * aid, int *val, char **bridge_ifname);
 
 /*
  * Format the struct hostapd_sta_add_params to the PDU
@@ -224,7 +225,7 @@ int wpa_sta_set_flags_format(char *pdu, int *p_size, const u8 *addr, int total_f
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_sta_set_flags_parser(char *pdu, int p_size, u8 *addr, int* total_flags,
+int wpa_sta_set_flags_parser(char *pdu, int p_size, u8 **addr, int* total_flags,
 					    int* flags_or, int* flags_and);
 
 /*
@@ -264,7 +265,7 @@ int wpa_send_action_format(char *pdu, int *p_size, unsigned int freq, unsigned i
  *
  */
 int wpa_send_action_parser(char * pdu,int p_size, unsigned int *freq, unsigned int *wait_time, 
-							const u8 * dst, const u8 * data,size_t *data_len);
+							u8 ** dst, u8 ** data,size_t *data_len);
 
 
 /*
@@ -319,7 +320,7 @@ int wpa_sta_deauth_format(char * pdu, int * p_size, const u8 *addr, int reason);
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_sta_deauth_parser(char * pdu,int p_size,const u8 * addr,int *reason);
+int wpa_sta_deauth_parser(char * pdu,int p_size,u8 ** addr,int *reason);
 
 /*
  * Format the func argc to the PDU
@@ -337,7 +338,7 @@ int wpa_sta_disassoc_format (char * pdu, int * p_size, const u8 *addr, int reaso
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_sta_disassoc_parser(char * pdu,int p_size,const u8 * addr,int *reason);
+int wpa_sta_disassoc_parser(char * pdu,int p_size, u8 ** addr,int *reason);
 
 /*
  * Format the func argc to the PDU
@@ -375,7 +376,7 @@ int wpa_send_mlme_format(char *pdu, int *p_size, const u8 *data, size_t data_len
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_send_mlme_parser(char *pdu, int p_size, const u8 *data, size_t *data_len, int *noack);
+int wpa_send_mlme_parser(char *pdu, int p_size, u8 **data, size_t *data_len, int *noack);
 
 
 /*
@@ -394,7 +395,7 @@ int wpa_get_seqnum_format(char *pdu, int *p_size, const u8 *addr, int idx, u8 *s
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_get_seqnum_parser(char *pdu, int p_size, u8 *addr, int *idx, u8 *seq);
+int wpa_get_seqnum_parser(char *pdu, int p_size, u8 **addr, int *idx, u8 *seq);
 
 /*
  * Format the func argc to the PDU
@@ -412,7 +413,7 @@ int wpa_set_sta_vlan_format(char *pdu, int *p_size, const u8 *addr, int vlan_id)
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_set_sta_vlan_parser(char *pdu, int p_size, const u8 *addr, int *vlan_id);
+int wpa_set_sta_vlan_parser(char *pdu, int p_size, u8 **addr, int *vlan_id);
 
 /*
  * Format the func argc to the PDU
@@ -431,7 +432,7 @@ int wpa_hapd_send_eapol_format(char *pdu, int *p_size, const u8 *addr, const u8 
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_hapd_send_eapol_parser(char *pdu, int p_size, const u8 *addr, const u8 *data,
+int wpa_hapd_send_eapol_parser(char *pdu, int p_size, u8 **addr, u8 **data,
 							size_t *data_len, int *encrypt, u32 *flags);
 
 /*
@@ -450,7 +451,7 @@ int wpa_read_sta_data_format(char *pdu, int *p_size, struct hostap_sta_driver_da
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_read_sta_data_parser(char *pdu, int p_size, struct hostap_sta_driver_data *data, const u8 *addr);
+int wpa_read_sta_data_parser(char *pdu, int p_size, struct hostap_sta_driver_data *data, u8 **addr);
 
 /*
  * Format the func argc to the PDU
@@ -468,7 +469,7 @@ int wpa_poll_client_format(char *pdu, int *p_size, const u8 *addr, int qos);
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_poll_client_parser(char * pdu,int p_size, const u8 * addr, int *qos);
+int wpa_poll_client_parser(char * pdu,int p_size, u8 ** addr, int *qos);
 
 /*
  * Format the func argc to the PDU
@@ -486,7 +487,7 @@ int wpa_get_inact_sec_format(char * pdu,int *p_size, const u8 * addr);
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_get_inact_sec_parser(char * pdu, int p_size, const u8 * addr);
+int wpa_get_inact_sec_parser(char * pdu, int p_size, u8 ** addr);
 
 /*
  * Format the func argc to the PDU
@@ -504,7 +505,7 @@ int wpa_sta_remove_format(char * pdu,int *p_size, const u8 * addr);
  * return	: SUCCESS(0)/FAILURE(-1)
  *
  */
-int wpa_sta_remove_parser(char * pdu, int p_size, const u8 * addr);
+int wpa_sta_remove_parser(char * pdu, int p_size, u8 ** addr);
 
 /*
  * Format the struct wpa_driver_ap_params *params to the PDU
@@ -564,7 +565,7 @@ int wpa_init_capa_format(char * pdu, int *pdu_size,struct wpa_driver_capa *capa)
 int wpa_init_capa_parser(char * pdu, int pdu_size,struct wpa_driver_capa *capa);
 
 int wpa_set_country_format(char * pdu, int *pdu_size,const char *alpha2_arg);
-int wpa_set_country_parser(char * pdu, int pdu_size, char *alpha2_arg);
+int wpa_set_country_parser(char * pdu, int pdu_size, char **alpha2_arg);
 
 int wpa_get_hw_feature_format(char * pdu, int *pdu_size, u16 *num_modes, u16 *flags);
 int wpa_get_hw_feature_parser(char * pdu, int pdu_size, u16 *num_modes, u16 *flags);
@@ -572,9 +573,13 @@ int remote_hw_modes_format(char * pdu, int *pdu_size, struct hostapd_hw_modes *r
 int remote_hw_modes_parser(char * pdu, int pdu_size, struct hostapd_hw_modes *remote_hw_modes);
 
 int local_default_capa(struct wpa_driver_capa *capa);
-int local_default_hw_mode(struct hostapd_hw_modes *local_hw_mode);
+struct hostapd_hw_modes *local_default_hw_mode();
 
 int i802_flush_format(char *pdu, int *p_size);
+
+int wpa_supplicant_data_format(char *pdu, int *p_size, union wpa_event_data *data, enum wpa_event_type *event);
+int wpa_supplicant_data_parser(char *pdu, int p_size, union wpa_event_data *data, enum wpa_event_type *event);
+
 
 
 #endif /* _WI_FLOW_H_ */

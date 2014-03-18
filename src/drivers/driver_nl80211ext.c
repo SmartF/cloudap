@@ -49,10 +49,12 @@
 #define IP_ADDR                 "127.0.0.1"
 #define MAX_CONNECT_QUEUE       1024
 
+extern struct hostapd_data ghapd;
 int accept_fd = -1;
 int agentfd = -1;
 char buf[MAX_BUF_LEN];
 struct i802_bss gbss;
+void *global_ctx;
 
 struct nl80211_global {
 	struct dl_list interfaces;
@@ -307,7 +309,7 @@ static int wpa_driver_nl80211_set_key(const char *ifname, void *priv,
     ret = wpa_set_key_format(buf, &buf_size, alg, addr, key_idx, set_tx, seq, seq_len, key, key_len);
     if(ret < 0)
     {
-        fprintf(stderr,"wpa_set_key_format Error,%s:%d\n",__FILE__,__LINE__);
+        fprintf(stderr,"wpa_scan2_format Error,%s:%d\n",__FILE__,__LINE__);
         return -1;
     }
     wpa_printf(MSG_DEBUG, "nl80211ext: wpa_scan2_format buf_size:%d",buf_size);
@@ -342,7 +344,7 @@ wpa_driver_nl80211_get_hw_feature_data(void *priv, u16 *num_modes, u16 *flags)
 		int ret;
 		int buf_size = MAX_BUF_LEN;
 		struct hostapd_hw_modes *local_hw_mode = NULL;
-		
+		/*local_hw_mode = (struct hostapd_hw_modes *)malloc(200);*/
 		memset(buf, 0, MAX_BUF_LEN);
 		ret = wpa_get_hw_feature_format(buf,&buf_size,num_modes,flags);
 		if(ret < 0 || buf_size <= 0)
@@ -350,23 +352,22 @@ wpa_driver_nl80211_get_hw_feature_data(void *priv, u16 *num_modes, u16 *flags)
 			fprintf(stderr,"wiflow_pdu_format Error,%s:%d\n",__FILE__,__LINE__);  
 			goto err;
 		}
-		ret = send(agentfd,buf,buf_size,0);
+		/*ret = send(agentfd,buf,buf_size,0);
 		if(ret < 0)
 		{
 			fprintf(stderr,"send Error,%s:%d\n",__FILE__,__LINE__);  
 			goto err;
-		}
+		}*/
 	
 		*num_modes = 1;
 		*flags = 1;
-		if(local_default_hw_mode(local_hw_mode) != 0)
+		local_hw_mode = local_default_hw_mode();
+		if(local_hw_mode == NULL)
 		{
-			fprintf(stderr,"capa default init Error,%s:%d\n",__FILE__,__LINE__);
+			fprintf(stderr,"local_default_hw_mode Error,%s:%d\n",__FILE__,__LINE__);
 			return NULL;
 		}
-	
 		return local_hw_mode;
-	
 	err:
 		return NULL;
 
@@ -405,6 +406,7 @@ static int wpa_driver_nl80211_set_ap(void *priv,
 	int ret = 0;
     /* format  params to buf */
     buf_size = MAX_BUF_LEN;
+    memset(buf,0, sizeof(buf));
     ret = wpa_set_ap_format(buf, &buf_size, params);
     if(ret < 0)
     {
@@ -1196,6 +1198,8 @@ static void wpa_driver_nl80211_event_receive(int sock, void *eloop_ctx,
     /* read nl80211 event from agent  */
 	struct wpa_driver_capa capa;
 	extern struct hapd_interfaces interfaces; 
+	union wpa_event_data data;
+	enum wpa_event_type event;
 //	struct hostapd_iface *iface = (struct hostapd_iface *)eloop_ctx;
 	int buf_size = 0;
 	int ret;
@@ -1225,6 +1229,14 @@ static void wpa_driver_nl80211_event_receive(int sock, void *eloop_ctx,
         	fprintf(stderr,"Recv Error,%s:%d\n",__FILE__,__LINE__);
     	}
 		break;
+	case WPA_SUP_EVENT:
+		ret = wpa_supplicant_data_parser(buf, buf_size, &data, &event);
+		if(ret < 0)
+    	{
+        	fprintf(stderr,"Recv Error,%s:%d\n",__FILE__,__LINE__);
+    	}
+		wpa_printf(MSG_DEBUG, "call wpa_supplicant_event");
+		wpa_supplicant_event((void*)(&ghapd), event, &data);
 	default:
 		fprintf(stderr,"Unknown WiFlow PDU type,%s:%d\n",__FILE__,__LINE__);
 		return;
@@ -1248,11 +1260,11 @@ static void handle_remote_accept(int sock, void *eloop_ctx, void *sock_ctx)
 	}
 }
 
-
 static void *i802_init(struct hostapd_data *hapd,
 		       struct wpa_init_params *params)
 {
     wpa_printf(MSG_DEBUG, "nl80211ext: %s",__FUNCTION__ );
+	global_ctx = hapd;
 	struct i802_bss *bss = &gbss;
 	int buf_size = 0;
 	int ret = 0;
