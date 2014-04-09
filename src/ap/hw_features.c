@@ -696,6 +696,8 @@ int hostapd_select_hw_mode(struct hostapd_iface *iface)
 		}
 	}
 	if (ok && iface->conf->secondary_channel) {
+	wpa_printf(MSG_ERROR,"ok=%d\n",ok);
+	
 		int sec_ok = 0;
 		int sec_chan = iface->conf->channel +
 			iface->conf->secondary_channel * 4;
@@ -729,6 +731,11 @@ int hostapd_select_hw_mode(struct hostapd_iface *iface)
 		return -3;
 	}
 	if (ok == 0 && iface->conf->channel != 0) {
+	
+	//MARK
+	wpa_printf(MSG_ERROR,"iface->conf->channel=%d\n",iface->conf->channel);
+	return 0;
+
 		hostapd_logger(iface->bss[0], NULL,
 			       HOSTAPD_MODULE_IEEE80211,
 			       HOSTAPD_LEVEL_WARNING,

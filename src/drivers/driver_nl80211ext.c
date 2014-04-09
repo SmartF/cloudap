@@ -352,12 +352,12 @@ wpa_driver_nl80211_get_hw_feature_data(void *priv, u16 *num_modes, u16 *flags)
 			fprintf(stderr,"wiflow_pdu_format Error,%s:%d\n",__FILE__,__LINE__);  
 			goto err;
 		}
-		/*ret = send(agentfd,buf,buf_size,0);
+		ret = send(agentfd,buf,buf_size,0);
 		if(ret < 0)
 		{
 			fprintf(stderr,"send Error,%s:%d\n",__FILE__,__LINE__);  
 			goto err;
-		}*/
+		}
 	
 		*num_modes = 1;
 		*flags = 1;
@@ -540,7 +540,33 @@ static int wpa_driver_nl80211_associate(
 static int wpa_driver_nl80211_get_capa(void *priv,
 				       struct wpa_driver_capa *capa)
 {
-    wpa_printf(MSG_DEBUG, "nl80211ext: %s",__FUNCTION__ );
+	wpa_printf(MSG_DEBUG, "nl80211ext: %s",__FUNCTION__ );
+	int buf_size = 0;
+	int ret = 0;
+    	/* format  type to buf */
+   	 buf_size = MAX_BUF_LEN;
+   	 ret = wiflow_pdu_format(buf,&buf_size, WIFLOW_INIT_CAPA_REQUEST);
+	if(ret < 0 || buf_size <= 0)
+    	{
+        	fprintf(stderr,"wiflow_pdu_format Error,%s:%d\n",__FILE__,__LINE__);  
+    	}
+	ret = send(agentfd,buf,buf_size,0);
+	if(ret < 0)
+    	{
+       	 fprintf(stderr,"send Error,%s:%d\n",__FILE__,__LINE__);  
+    	}
+
+capa->key_mgmt=15;
+capa->enc=15;
+capa->auth=7;
+capa->flags=17025248;
+capa->max_scan_ssids=4;
+capa->max_sched_scan_ssids=0;
+capa->sched_scan_supported=0;
+capa->max_match_sets=0;
+capa->max_remain_on_chan=5000;
+capa->max_stations=0;
+
 	return 0;
 }
 
@@ -1218,6 +1244,7 @@ static void wpa_driver_nl80211_event_receive(int sock, void *eloop_ctx,
         break;
     /* add new case here */
 	case WIFLOW_INIT_CAPA_RESPONSE:
+        fprintf(stderr,"WIFLOW_INIT_CAPA_RESPONSE Received,%s:%d\n",__FILE__,__LINE__);
 		ret = wpa_init_capa_parser(buf,buf_size,&capa);
 		interfaces.iface[0]->drv_flags = capa.flags;
 		interfaces.iface[0]->probe_resp_offloads = capa.probe_resp_offloads;

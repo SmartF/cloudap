@@ -45,6 +45,7 @@ int wiflow_pdu_format(char * pdu, int *p_size, enum wiflow_commands type)
 
     wpdu = (struct wiflow_pdu*)pdu;
     wpdu->type = type;
+    fprintf(stderr,"wiflow_pdu_format type:%d %s:%d\n",wpdu->type,__FILE__,__LINE__); 
     return 0;
 err:
     return -1;   

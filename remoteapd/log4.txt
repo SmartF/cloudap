@@ -1,0 +1,83 @@
+smarfu@smarfu-laptop:~/git/SmartF/20140325/cloudap/remoteapd$ sudo ./hostapd -d hostapd.conf
+random: Trying to read entropy from /dev/random
+nl80211ext: nl80211_agent_init ...
+nl80211ext: nl80211_agent_init end
+nl80211ext: main wpa_drivers[i]->agent_init
+random: Got 20/20 bytes from /dev/random
+nl80211ext: wpa_driver_nl80211_event_receive
+nl80211ext: init_agent
+Configuration file: hostapd.conf
+nl80211ext: nl80211_global_init
+nl80211ext: i802_init
+nl80211ext: wpa_init_params_format buf_size:89
+nl80211ext: wpa_driver_nl80211_get_capa
+wiflow_pdu_format type:32 ../src/drivers/wiflow_protocol.c:48
+BSS count 1, BSSID mask 00:00:00:00:00:00 (0 bits)
+nl80211ext: wpa_driver_nl80211_get_hw_feature_data
+nl80211ext: local_default_hw_mode
+wlan2: IEEE 802.11 Configured channel (11) not found from the channel list of current mode (1) IEEE 802.11g
+wlan2: IEEE 802.11 Hardware does not support configured channel
+Could not select hw_mode and channel. (-4)
+wlan2: Unable to setup interface.
+wlan2: Flushing old station entries
+nl80211ext: i802_flush
+nl80211ext: i802_flush_format buf_size:1024
+wlan2: Deauthenticate all stations
+nl80211ext: i802_sta_deauth
+nl80211ext: wpa_sta_deauth_format buf_size:22
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: i802_deinit
+wiflow_pdu_format type:3 ../src/drivers/wiflow_protocol.c:48
+nl80211ext: wpa_driver_nl80211_event_receive
+nl80211ext: wpa_supplicant_data_parser
+call wpa_supplicant_event
+nl80211ext: wpa_supplicant_event,event:20
+smarfu@smarfu-laptop:~/git/SmartF/20140325/cloudap/remoteapd$ sudo ./hostapd -d hostapd.conf
+random: Trying to read entropy from /dev/random
+nl80211ext: nl80211_agent_init ...
+nl80211ext: nl80211_agent_init end
+nl80211ext: main wpa_drivers[i]->agent_init
+random: Got 20/20 bytes from /dev/random
+nl80211ext: wpa_driver_nl80211_event_receive
+nl80211ext: init_agent
+Configuration file: hostapd.conf
+nl80211ext: nl80211_global_init
+nl80211ext: i802_init
+nl80211ext: wpa_init_params_format buf_size:89
+nl80211ext: wpa_driver_nl80211_get_capa
+wiflow_pdu_format type:32 ../src/drivers/wiflow_protocol.c:48
+BSS count 1, BSSID mask 00:00:00:00:00:00 (0 bits)
+nl80211ext: wpa_driver_nl80211_get_hw_feature_data
+nl80211ext: local_default_hw_mode
+wlan2: IEEE 802.11 Configured channel (11) not found from the channel list of current mode (1) IEEE 802.11g
+wlan2: IEEE 802.11 Hardware does not support configured channel
+Could not select hw_mode and channel. (-4)
+wlan2: Unable to setup interface.
+wlan2: Flushing old station entries
+nl80211ext: i802_flush
+nl80211ext: i802_flush_format buf_size:1024
+wlan2: Deauthenticate all stations
+nl80211ext: i802_sta_deauth
+nl80211ext: wpa_sta_deauth_format buf_size:22
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: wpa_driver_nl80211_set_key
+nl80211ext: wpa_scan2_format buf_size:62
+nl80211ext: i802_deinit
+wiflow_pdu_format type:3 ../src/drivers/wiflow_protocol.c:48
+nl80211ext: wpa_driver_nl80211_event_receive
+WIFLOW_INIT_CAPA_RESPONSE Received,../src/drivers/driver_nl80211ext.c:1235
+
+
+

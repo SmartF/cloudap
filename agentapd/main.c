@@ -551,16 +551,18 @@ void handle_agent_read(int sock, void *eloop_ctx, void *sock_ctx)
 		{
 			fprintf(stderr,"get_capa Error,%s:%d\n",__FILE__,__LINE__); 
 		}
+		fprintf(stderr,"WIFLOW_INIT_CAPA_REQUEST:,%s:%d\n",__FILE__,__LINE__); 
 		ret = wpa_init_capa_format(buf, &buf_size, &capa);
 		if(ret < 0 || buf_size <= 0)
 		{
 			fprintf(stderr,"wiflow_pdu_format Error,%s:%d\n",__FILE__,__LINE__);  
 		}
-		/*ret = send(sock,buf,buf_size,0);
+		fprintf(stderr,"WIFLOW_INIT_CAPA_RESPONSE,%s:%d\n",__FILE__,__LINE__); 
+		ret = send(sock,buf,buf_size,0);
 		if(ret < 0)
 		{
 			fprintf(stderr,"send Error,%s:%d\n",__FILE__,__LINE__);  
-    	}*/
+    		}
 		break;
 	case WIFLOW_SET_COUNTRY:
 		ret = wpa_set_country_parser(buf,buf_size,&country);

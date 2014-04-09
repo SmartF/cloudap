@@ -1,0 +1,7 @@
+random: Trying to read entropy from /dev/random
+nl80211ext: nl80211_agent_init ...
+nl80211ext: nl80211_agent_init end
+nl80211ext: main wpa_drivers[i]->agent_init
+random: Got 20/20 bytes from /dev/random
+Signal 2 received - terminating
+ELOOP: remaining socket: sock=4 eloop_data=(nil) user_data=(nil) handler=0x808d500

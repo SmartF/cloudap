@@ -1,0 +1,156 @@
+smarfu@smarfu-laptop:~/git/SmartF/20140326/cloudap/agentapd$ sudo ./test -d
+			#nl80211: nl80211_global_init
+			#nl80211: wpa_driver_nl80211_init_nl_global
+			#nl80211: nl_create_handle
+			#nl80211: nl_create_handle
+			#nl80211: nl_get_multicast_id
+			#nl80211: send_and_recv_msgs_global
+			#nl80211: send_and_recv
+			#nl80211: family_handler
+			#nl80211: ack_handler
+			#nl80211: nl_get_multicast_id
+			#nl80211: send_and_recv_msgs_global
+			#nl80211: send_and_recv
+			#nl80211: family_handler
+			#nl80211: ack_handler
+			#nl80211: nl_get_multicast_id
+			#nl80211: send_and_recv_msgs_global
+			#nl80211: send_and_recv
+			#nl80211: family_handler
+			#nl80211: ack_handler
+nl80211ext: params->bssid - hexdump(len=6): 20 4e 7f da 23 6c
+nl80211ext: params->ifname:wlan1
+nl80211ext: params->ssid:mengning
+nl80211ext: params->ssid_len:8
+nl80211ext: params->num_bridge:1
+nl80211ext: params->bridge[0]:%s - hexdump(len=17): [NULL]
+nl80211ext: params->own_addr - hexdump(len=6): 20 4e 7f da 23 6c
+nl80211ext: wpa_drivers[i]->hapd_init(&hapd,&params)
+			#nl80211: i802_init
+nl80211ext: params->bssid - hexdump(len=6): 20 4e 7f da 23 6c
+nl80211ext: params->ifname:wlan1
+nl80211ext: params->ssid:mengning
+nl80211ext: params->ssid_len:8
+nl80211ext: params->num_bridge:1
+nl80211ext: params->bridge[0]:(null)
+nl80211ext: params->bridge[1]:(null)
+nl80211ext: params->bridge[2]:(null)
+nl80211ext: params->own_addr - hexdump(len=6): 20 4e 7f da 23 6c
+			#nl80211: wpa_driver_nl80211_init
+nl80211ext: wpa_driver_nl80211_init
+			#nl80211: wpa_driver_nl80211_init_nl
+			#nl80211: nl80211_init_bss
+			#nl80211: nl80211_get_phy_name
+nl80211: interface wlan1 in phy phy1
+rfkill: initial event: idx=0 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=1 type=2 op=0 soft=1 hard=0
+rfkill: initial event: idx=2 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=3 type=1 op=0 soft=0 hard=0
+			#nl80211: wpa_driver_nl80211_finish_drv_init
+			#nl80211: wpa_driver_nl80211_capa
+			#nl80211: wpa_driver_nl80211_get_info
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv_msgs
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: wiphy_info_handler
+nl80211: Using driver-based off-channel TX
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: add_ifidx
+nl80211: Add own interface ifindex 4
+			#nl80211: wpa_driver_nl80211_set_mode
+			#nl80211: is_ap_interface
+			#nl80211: nl80211_set_mode
+			#nl80211: nl80211_iftype_str
+nl80211: Set mode ifindex 4 iftype 3 (AP)
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv_msgs
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: is_p2p_interface
+			#nl80211: is_ap_interface
+			#nl80211: nl80211_mgmt_unsubscribe
+			#nl80211: nl80211_setup_ap
+nl80211: Setup AP - device_ap_sme=0 use_monitor=0
+			#nl80211: wpa_driver_nl80211_probe_req_report
+			#nl80211: nl80211_mgmt_subscribe_ap
+			#nl80211: nl80211_alloc_mgmt_handle
+			#nl80211: nl_create_handle
+nl80211: Subscribe to mgmt frames with AP handle 0x8353628
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0xb0 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0x0 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0x20 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0xa0 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0xc0 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: nl80211_register_frame
+nl80211: Register frame type=0xd0 nl_handle=0x8353628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: error_handler
+nl80211: Register frame command failed (type=208): ret=-114 (Operation already in progress)
+nl80211: Register frame match - hexdump(len=0): [NULL]
+			#nl80211: nl_destroy_handles
+nl80211: Failed to set interface wlan1 into AP mode
+			#nl80211: wpa_driver_nl80211_deinit
+nl80211ext: wpa_driver_nl80211_deinit
+			#nl80211: nl80211_remove_monitor_interface
+			#nl80211: is_ap_interface
+			#nl80211: wpa_driver_nl80211_del_beacon
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv_msgs
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: error_handler
+netlink: Operstate: linkmode=0, operstate=6
+			#nl80211: wpa_driver_nl80211_set_mode
+			#nl80211: is_ap_interface
+			#nl80211: nl80211_set_mode
+			#nl80211: nl80211_iftype_str
+nl80211: Set mode ifindex 4 iftype 2 (STATION)
+			#nl80211: nl80211_cmd
+			#nl80211: send_and_recv_msgs
+			#nl80211: send_and_recv
+			#nl80211: no_seq_check
+			#nl80211: ack_handler
+			#nl80211: is_p2p_interface
+			#nl80211: is_ap_interface
+			#nl80211: nl80211_teardown_ap
+			#nl80211: nl80211_mgmt_unsubscribe
+			#nl80211: nl80211_mgmt_unsubscribe
+			#nl80211: nl80211_destroy_bss
+hapd_init Failed to initialize
+

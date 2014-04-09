@@ -7408,6 +7408,31 @@ static int wpa_driver_nl80211_get_capa(void *priv,
 	if (!drv->has_capability)
 		return -1;
 	os_memcpy(capa, &drv->capa, sizeof(*capa));
+ 
+/*
+	fprintf(stderr,"capa->key_mgmt=%u\n",capa->key_mgmt);
+	fprintf(stderr,"capa->enc=%u\n",capa->enc);
+	fprintf(stderr,"capa->auth=%u\n",capa->auth);
+	fprintf(stderr,"capa->flags=%u\n",capa->flags);
+	fprintf(stderr,"capa->max_scan_ssids=%u\n",capa->max_scan_ssids);
+	fprintf(stderr,"capa->max_sched_scan_ssids=%u\n",capa->max_sched_scan_ssids);
+	fprintf(stderr,"capa->sched_scan_supported=%u\n",capa->sched_scan_supported);
+	fprintf(stderr,"capa->max_match_sets=%u\n",capa->max_match_sets);
+	fprintf(stderr,"capa->max_remain_on_chan=%u\n",capa->max_remain_on_chan);
+	fprintf(stderr,"capa->max_stations=%u\n",capa->max_stations);
+*/
+
+	wpa_printf(MSG_DEBUG,"capa->key_mgmt=%u\n",capa->key_mgmt);
+	wpa_printf(MSG_DEBUG,"capa->enc=%u\n",capa->enc);
+	wpa_printf(MSG_DEBUG,"capa->auth=%u\n",capa->auth);
+	wpa_printf(MSG_DEBUG,"capa->flags=%u\n",capa->flags);
+	wpa_printf(MSG_DEBUG,"capa->max_scan_ssids=%u\n",capa->max_scan_ssids);
+	wpa_printf(MSG_DEBUG,"capa->max_sched_scan_ssids=%u\n",capa->max_sched_scan_ssids);
+	wpa_printf(MSG_DEBUG,"capa->sched_scan_supported=%u\n",capa->sched_scan_supported);
+	wpa_printf(MSG_DEBUG,"capa->max_match_sets=%u\n",capa->max_match_sets);
+	wpa_printf(MSG_DEBUG,"capa->max_remain_on_chan=%u\n",capa->max_remain_on_chan);
+	wpa_printf(MSG_DEBUG,"capa->max_stations=%u\n",capa->max_stations);
+
 	return 0;
 }
 
