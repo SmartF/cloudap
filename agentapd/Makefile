@@ -11,7 +11,6 @@ OBJS = $(COMMON_OBJS) $(COMMON_LIB) $(UTILS_LIB)
 all: $(LIBS) $(TARGETS)
 
 copy:
-	$(CP) ../src/drivers/driver.h ./
 	$(CP) ../src/drivers/wiflow_protocol.h ./
 	$(CP) ../src/drivers/wiflow_protocol.c ./
 
@@ -35,7 +34,7 @@ $(COMMON_LIB):
 clean:
 	make -w -C $(UTILS_DIR) -f Makefile clean
 	make -w -C $(COMMON_DIR) -f Makefile clean
-	$(RM) $(RM_FLAGS) $(OBJS) $(TARGETS) test
+	$(RM) $(RM_FLAGS) $(OBJS) $(TARGETS) test test.o
 	$(RM) $(RM_FLAGS) *.lib *.bak *.a *~
 
 

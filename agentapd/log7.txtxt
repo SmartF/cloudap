@@ -1,0 +1,3635 @@
+nl80211ext: params->bssid - hexdump(len=6): 20 4e 7f da 23 6c
+nl80211ext: params->ifname:wlan1
+nl80211ext: params->ssid:mengning
+nl80211ext: params->ssid_len:8
+nl80211ext: params->num_bridge:1
+nl80211ext: params->bridge[0]:%s - hexdump(len=17): [NULL]
+nl80211ext: params->own_addr - hexdump(len=6): 20 4e 7f da 23 6c
+i = 0
+
+nl80211ext: wpa_drivers[i]->hapd_init(&hapd,&params)
+nl80211: interface wlan1 in phy phy12
+rfkill: initial event: idx=0 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=1 type=2 op=0 soft=1 hard=0
+rfkill: initial event: idx=2 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=14 type=1 op=0 soft=0 hard=0
+nl80211: Using driver-based off-channel TX
+nl80211: Add own interface ifindex 18
+nl80211: Set mode ifindex 18 iftype 3 (AP)
+nl80211: Setup AP - device_ap_sme=0 use_monitor=0
+nl80211: Subscribe to mgmt frames with AP handle 0x8345628
+nl80211: Register frame type=0xb0 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x0 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x20 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xa0 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xc0 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xd0 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x40 nl_handle=0x8345628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211ext: hapd.bss->ifname:wlan1
+NL80211 initialized
+nl80211: Regulatory information - country=00
+nl80211: 2402-2472 @ 40 MHz
+nl80211: 2457-2482 @ 20 MHz
+nl80211: 2474-2494 @ 20 MHz
+nl80211: 5170-5250 @ 40 MHz
+nl80211: 5735-5835 @ 40 MHz
+nl80211: Added 802.11b mode based on 802.11g information
+nl80211: Set freq 2462 (ht_enabled=0 sec_channel_offset=0)
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xea8b9540
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+nl80211: Set beacon (beacon_set=0)
+wpa_driver_nl80211_set_operstate: operstate 0->1 (UP)
+netlink: Operstate: linkmode=-1, operstate=6
+RTM_NEWLINK: operstate=1 ifi_flags=0x1002 ()
+nl80211: Ignore interface down event since interface wlan1 is up
+RTM_NEWLINK: operstate=1 ifi_flags=0x1002 ()
+nl80211: Ignore interface down event since interface wlan1 is up
+RTM_NEWLINK: operstate=1 ifi_flags=0x1043 ([UP][RUNNING])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+RTM_NEWLINK: operstate=1 ifi_flags=0x1003 ([UP])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+RTM_NEWLINK: operstate=1 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+nl80211: Event message available
+nl80211: Delete station 54:ea:a8:16:18:90
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=26): c0 00 00 00 ff ff ff ff ff ff 20 4e 7f da 23 6c 20 4e 7f da 23 6c c0 02 02 00
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+unknown mgmt cb frame subtype 12
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=52): 40 00 00 00 ff ff ff ff ff ff 90 4c e5 c9 8a fe ff ff ff ff ff ff d0 17 00 07 55 53 54 43 5f 53 5a 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c 7f 01 01
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff c4 46 19 a1 29 9c ff ff ff ff ff ff 50 ec 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b7 ba 56 ff ff ff ff ff ff 20 00 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b7 ba 56 ff ff ff ff ff ff 50 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 09 dd 09 00 10 18 02 00 10 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b7 ba 56 ff ff ff ff ff ff 70 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b7 ba 56 ff ff ff ff ff ff 80 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 20 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 09 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 30 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 40 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 50 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 70 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 80 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 90 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0d 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff c0 aa 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff d0 aa 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff 10 ab 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff b0 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff c0 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 70 bd 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff a0 bd 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff d0 ab 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff e0 ab 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff f0 ab 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff 00 ac 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 70 f1 a1 13 67 44 ff ff ff ff ff ff 10 ac 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=147): 40 00 00 00 ff ff ff ff ff ff 0c 30 21 cb 2d 8d ff ff ff ff ff ff 10 08 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=147): 40 00 00 00 ff ff ff ff ff ff 0c 30 21 cb 2d 8d ff ff ff ff ff ff 20 08 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 70 02 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 80 02 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 90 02 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=41): b0 00 3a 01 20 4e 7f da 23 6c 54 ea a8 16 18 90 20 4e 7f da 23 6c a0 02 00 00 01 00 00 00 dd 09 00 10 18 02 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+mgmt::auth
+authentication reply: STA=54:ea:a8:16:18:90 auth_alg=0 auth_transaction=2 resp=0 (IE len=0)
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xee1c8a80
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=30): b0 00 00 00 54 ea a8 16 18 90 20 4e 7f da 23 6c 20 4e 7f da 23 6c d0 02 00 00 02 00 00 00
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+mgmt::auth cb
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=75): 00 00 3a 01 20 4e 7f da 23 6c 54 ea a8 16 18 90 20 4e 7f da 23 6c b0 02 21 04 14 00 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 08 82 84 8b 96 24 30 48 6c 21 02 0b 14 24 02 01 0d 32 04 0c 12 18 60 dd 09 00 10 18 02 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+mgmt::assoc_req
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xe8dd4240
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=46): 10 00 00 00 54 ea a8 16 18 90 20 4e 7f da 23 6c 20 4e 7f da 23 6c e0 02 11 04 00 00 01 c0 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+mgmt::assoc_resp cb
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=0xbff091a0 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=54:ea:a8:16:18:90
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=0xbff091a0 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=54:ea:a8:16:18:90
+wpa_driver_nl80211_set_key: ifindex=18 alg=0 addr=0xbff091a0 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=54:ea:a8:16:18:90
+wpa_driver_nl80211_set_key: ifindex=18 alg=2 addr=0xbff091a0 key_idx=1 set_tx=1 seq_len=0 key_len=32
+   addr=54:ea:a8:16:18:90
+nl80211: set_key failed; err=-22 Invalid argument)
+nl80211: Event message available
+nl80211: New station 54:ea:a8:16:18:90
+
+EVENT_EAPOL_TX_STATUS start
+
+EVENT_EAPOL_TX_STATUS end
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff d0 c0 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 10 c1 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff b0 0a 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff c0 0a 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff d0 0a 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 40 09 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 50 09 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff d0 09 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff e0 09 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 20 0a 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 30 0a 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 30 c4 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 70 c4 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 65 3e 8a b0 ff ff ff ff ff ff 20 96 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 72 10 17 ff ff 00 00 01 00 00 00 00 00 2c 01 03 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 65 3e 8a b0 ff ff ff ff ff ff 30 96 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 72 10 17 ff ff 00 00 01 00 00 00 00 00 2c 01 03 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 65 3e 8a b0 ff ff ff ff ff ff 40 96 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 72 10 17 ff ff 00 00 01 00 00 00 00 00 2c 01 03 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff 00 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff 20 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff 30 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff c0 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff d0 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 21 6b 97 4d 28 ff ff ff ff ff ff e0 2f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 50 10 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 70 10 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 80 10 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 90 10 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 00 12 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 40 12 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 60 12 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0d 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 80 c7 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 90 c7 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff c0 c7 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff d0 c7 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff 10 00 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff 20 00 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff 40 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff 50 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 64 3b e9 26 ff ff ff ff ff ff 40 30 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 64 3b e9 26 ff ff ff ff ff ff 60 30 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff a0 02 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff c4 46 19 6a 73 8e ff ff ff ff ff ff b0 02 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 7c 18 1b ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=234): 40 00 00 00 ff ff ff ff ff ff 4c 8b ef a1 cc a2 ff ff ff ff ff ff 20 94 00 07 55 53 54 43 5f 53 5a 01 08 82 84 8b 0c 12 96 18 24 32 04 30 48 60 6c 2d 1a 2c 00 01 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 88 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 35 82 a2 8d a1 75 5b bd 9b c2 8b f9 4a 51 dc 07 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 03 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 24 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 11 00 05 59 33 30 30 43 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 23 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=239): 40 00 00 00 ff ff ff ff ff ff 4c 8b ef a1 cc a2 ff ff ff ff ff ff 30 94 00 0c 44 75 62 57 69 46 69 2d 32 34 33 39 01 08 82 84 8b 0c 12 96 18 24 32 04 30 48 60 6c 2d 1a 2c 00 01 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 88 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 35 82 a2 8d a1 75 5b bd 9b c2 8b f9 4a 51 dc 07 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 03 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 24 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 11 00 05 59 33 30 30 43 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 23 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=234): 40 00 00 00 ff ff ff ff ff ff 4c 8b ef a1 cc a2 ff ff ff ff ff ff 40 94 00 07 55 53 54 43 5f 53 5a 01 08 82 84 8b 0c 12 96 18 24 32 04 30 48 60 6c 2d 1a 2c 00 01 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 88 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 35 82 a2 8d a1 75 5b bd 9b c2 8b f9 4a 51 dc 07 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 03 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 24 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 11 00 05 59 33 30 30 43 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 23 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=239): 40 00 00 00 ff ff ff ff ff ff 4c 8b ef a1 cc a2 ff ff ff ff ff ff 50 94 00 0c 44 75 62 57 69 46 69 2d 32 34 33 39 01 08 82 84 8b 0c 12 96 18 24 32 04 30 48 60 6c 2d 1a 2c 00 01 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 88 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 35 82 a2 8d a1 75 5b bd 9b c2 8b f9 4a 51 dc 07 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 03 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 24 00 0c 48 55 41 57 45 49 20 59 33 30 30 43 10 11 00 05 59 33 30 30 43 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 23 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 60 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 09 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 80 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 90 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff b0 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff c0 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff f0 14 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 00 15 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0d 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 10 15 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0d 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff 10 0c 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff 30 0c 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=123): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0b 3b ff ff ff ff ff ff 40 0c 00 07 55 53 54 43 5f 53 5a 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 5c f8 a1 54 6a 96 ff ff ff ff ff ff 30 cb 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 20 10 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_PROBE_REQ
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+-----WLAN_FC_STYPE_BEACON
+nl80211: Beacon

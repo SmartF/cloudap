@@ -33,14 +33,15 @@ extern int wpa_debug_show_keys;
 extern int wpa_debug_timestamp;
 
 extern struct wpa_driver_ops *wpa_drivers[];
-static struct hapd_global global;
+
 
 struct hapd_global {
 	void **drv_priv;
 	size_t drv_count;
 };
 
-struct hostapd_data ghapd;
+static struct hapd_global global;
+
 
 #ifndef CONFIG_NO_HOSTAPD_LOGGER
 static void hostapd_logger_cb(void *ctx, const u8 *addr, unsigned int module,
