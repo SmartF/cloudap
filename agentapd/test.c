@@ -256,9 +256,9 @@ void ieee802_11ext_mgmt(struct hostapd_data *hapd, const u8 *buf, size_t len)
     unsigned char da1[30]={0xb0,0x00,0x00,0x00,0x54,0xea,0xa8,0x16,0x18,0x90,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x00,
         0x00,0x00,0x00,0x02,0x00,0x00,0x00};
 
-    unsigned char da2[46]={0x10,0x00,0x00,0x00,0x54,0xea,0xa8,0x16,0x18,0x90,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x00,
+    unsigned char da2[46]={0x10,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x20,0x4e,0x7f,0xda,0x23,0x6c,0x00,
         0x00,0x11,0x04,0x00,0x00,0x01,0xc0,0x01,0x08,0x82,0x84,0x8b,0x96,0x0c,0x12,0x18,0x24,0x32,0x04,0x30,0x48,0x60,0x6c};
-	unsigned char addr[ETH_ALEN] = {0x54,0xea,0xa8,0x16,0x18,0x90};/*54 ea a8 16 18 90*/
+	unsigned char addr[ETH_ALEN] = {0};// {0x54,0xea,0xa8,0x16,0x18,0x90};/*54 ea a8 16 18 90*/
 	unsigned char bssid[ETH_ALEN] = {0x20,0x4e,0x7f,0xda,0x23,0x6c};/*20:4e:7f:da:23:6c*/
 	if (len < 24)
 		return;
@@ -266,6 +266,13 @@ void ieee802_11ext_mgmt(struct hostapd_data *hapd, const u8 *buf, size_t len)
 	mgmt = (struct ieee80211_mgmt *) buf;
 	fc = le_to_host16(mgmt->frame_control);
 	stype = WLAN_FC_GET_STYPE(fc);
+	if(memcmp(bssid,mgmt->da,6)!=0)
+	{	
+		return;
+	}
+	memcpy(addr,mgmt->sa,6);
+	wpa_hexdump(MSG_DEBUG, "------------mgmt->sa",addr, ETH_ALEN);
+	wpa_hexdump(MSG_DEBUG, "------------mgmt->da",mgmt->da, ETH_ALEN);
 
 	if (stype == WLAN_FC_STYPE_BEACON) {
         	printf("-----WLAN_FC_STYPE_BEACON\n");
@@ -290,6 +297,10 @@ void ieee802_11ext_mgmt(struct hostapd_data *hapd, const u8 *buf, size_t len)
 		break;
 	case WLAN_FC_STYPE_ASSOC_REQ:
 		wpa_printf(MSG_DEBUG, "mgmt::assoc_req");
+		//sta = ap_get_sta(hapd, mgmt->sa);
+		//send_assoc_resp(hapd, sta, resp, reassoc, pos, left);
+		memcpy(da2+4,mgmt->sa,6);
+		wpa_hexdump(MSG_DEBUG, "------------da2",da2,46);
 		wpa_drivers[i]->send_mlme(hapd->bss,da2,46,0);
 		//handle_assoc(hapd, mgmt, len, 0);
 		break;
@@ -321,7 +332,7 @@ void ieee802_11ext_mgmt_cb(struct hostapd_data *hapd, const u8 *buf, size_t len,
 	const struct ieee80211_mgmt *mgmt;
 	mgmt = (const struct ieee80211_mgmt *) buf;
 	char iface[IFNAMSIZ + 1]  = "wlan1";
-	unsigned char addr[ETH_ALEN] = {0x54,0xea,0xa8,0x16,0x18,0x90};/*54 ea a8 16 18 90*/
+	unsigned char addr[ETH_ALEN] = {0};//{0x54,0xea,0xa8,0x16,0x18,0x90};/*54 ea a8 16 18 90*/
 	unsigned char seq[32] = {0xa5,0xad,0x37,0x88,0xb8,0x5b,0x96,0x3f,0x8c,0x71,0x2a,0x46,0x4e,0x6e,0xad,0xcc,0xca,
             0x12,0x14,0xf3,0xa3,0x2d,0xba,0x7c,0xc4,0x12,0x33,0x6e,0x91,0xcb,0x62,0x6b};
 	unsigned char own_addr[ETH_ALEN] = {0x20,0x4e,0x7f,0xda,0x23,0x6c};/*20:4e:7f:da:23:6c*/
@@ -336,6 +347,18 @@ void ieee802_11ext_mgmt_cb(struct hostapd_data *hapd, const u8 *buf, size_t len,
 	params.ht_capabilities->ht_extended_capabilities = ;
 	params.ht_capabilities->tx_bf_capability_info = ;
 	params.ht_capabilities->asel_capabilities = ;*/
+
+	wpa_hexdump(MSG_DEBUG, "ieee802_11ext_mgmt_cb------------mgmt->da",mgmt->da, ETH_ALEN);
+
+	if(memcmp(own_addr,mgmt->sa,6)!=0)
+	{	
+		printf("memcmp(own_addr,mgmt->da,6)!=0\n");
+		return;
+	}
+	memcpy(addr,mgmt->da,6);
+	wpa_hexdump(MSG_DEBUG, "ieee802_11ext_mgmt_cb------------mgmt->sa",addr, ETH_ALEN);
+	wpa_hexdump(MSG_DEBUG, "ieee802_11ext_mgmt_cb------------mgmt->da",mgmt->da, ETH_ALEN);
+
 
 	switch (stype) {
 	case WLAN_FC_STYPE_AUTH:
@@ -474,6 +497,5 @@ void wpa_scan_results_free(struct wpa_scan_results *res)
 {
     return;   
 }
-
 
 
