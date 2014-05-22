@@ -1,0 +1,3968 @@
+nl80211ext: params->bssid - hexdump(len=6): 20 4e 7f da 23 6c
+nl80211ext: params->ifname:wlan1
+nl80211ext: params->ssid:mengning
+nl80211ext: params->ssid_len:8
+nl80211ext: params->num_bridge:1
+nl80211ext: params->bridge[0]:%s - hexdump(len=17): [NULL]
+nl80211ext: params->own_addr - hexdump(len=6): 20 4e 7f da 23 6c
+i = 0
+
+nl80211ext: wpa_drivers[i]->hapd_init(&hapd,&params)
+nl80211: interface wlan1 in phy phy2
+rfkill: initial event: idx=0 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=1 type=2 op=0 soft=1 hard=0
+rfkill: initial event: idx=2 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=4 type=1 op=0 soft=0 hard=0
+nl80211: Using driver-based off-channel TX
+nl80211: Add own interface ifindex 7
+nl80211: Set mode ifindex 7 iftype 3 (AP)
+nl80211: Setup AP - device_ap_sme=0 use_monitor=0
+nl80211: Subscribe to mgmt frames with AP handle 0x87e2628
+nl80211: Register frame type=0xb0 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x0 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x20 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xa0 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xc0 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0xd0 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211: Register frame type=0x40 nl_handle=0x87e2628
+nl80211: Register frame match - hexdump(len=0): [NULL]
+nl80211ext: hapd.bss->ifname:wlan1
+NL80211 initialized
+nl80211: Regulatory information - country=CN
+nl80211: 2402-2482 @ 40 MHz
+nl80211: 5735-5835 @ 40 MHz
+nl80211: Added 802.11b mode based on 802.11g information
+nl80211: Set freq 2462 (ht_enabled=0 sec_channel_offset=0)
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xe91e6600
+wpa_driver_nl80211_set_key: ifindex=7 alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=7 alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=7 alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=7 alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+nl80211: Set beacon (beacon_set=0)
+wpa_driver_nl80211_set_operstate: operstate 0->1 (UP)
+netlink: Operstate: linkmode=-1, operstate=6
+RTM_NEWLINK: operstate=1 ifi_flags=0x1002 ()
+nl80211: Ignore interface down event since interface wlan1 is up
+RTM_NEWLINK: operstate=1 ifi_flags=0x1002 ()
+nl80211: Ignore interface down event since interface wlan1 is up
+RTM_NEWLINK: operstate=1 ifi_flags=0x1043 ([UP][RUNNING])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+RTM_NEWLINK: operstate=1 ifi_flags=0x1003 ([UP])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+RTM_NEWLINK: operstate=1 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+RTM_NEWLINK, IFLA_IFNAME: Interface 'wlan1' added
+nl80211: if_removed already cleared - ignore event
+nl80211: Event message available
+nl80211: Delete station 54:ea:a8:16:18:90
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=26): c0 00 00 00 ff ff ff ff ff ff 20 4e 7f da 23 6c 20 4e 7f da 23 6c d0 05 02 00
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): ff ff ff ff ff ff
+ieee802_11ext_mgmt_cb------------mgmt->sa - hexdump(len=6): ff ff ff ff ff ff
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): ff ff ff ff ff ff
+unknown mgmt cb frame subtype 12
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff f0 05 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 90 06 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff a0 06 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff d0 06 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff e0 06 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff f0 06 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 00 07 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff a0 56 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff b0 56 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff c0 56 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 00 57 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 20 16 d8 f5 e2 a9 ff ff ff ff ff ff b0 4c 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=41): b0 00 3a 01 20 4e 7f da 23 6c 54 ea a8 16 18 90 20 4e 7f da 23 6c 70 57 00 00 01 00 00 00 dd 09 00 10 18 02 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+------------mgmt->sa - hexdump(len=6): 54 ea a8 16 18 90
+------------mgmt->da - hexdump(len=6): 20 4e 7f da 23 6c
+mgmt::auth
+authentication reply: STA=54:ea:a8:16:18:90 auth_alg=0 auth_transaction=2 resp=0 (IE len=0)
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xedf77b40
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=30): b0 00 00 00 54 ea a8 16 18 90 20 4e 7f da 23 6c 20 4e 7f da 23 6c e0 05 00 00 02 00 00 00
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 54 ea a8 16 18 90
+ieee802_11ext_mgmt_cb------------mgmt->sa - hexdump(len=6): 54 ea a8 16 18 90
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 54 ea a8 16 18 90
+mgmt::auth cb
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=75): 00 00 3a 01 20 4e 7f da 23 6c 54 ea a8 16 18 90 20 4e 7f da 23 6c 80 57 21 04 14 00 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 08 82 84 8b 96 24 30 48 6c 21 02 0b 14 24 02 01 0d 32 04 0c 12 18 60 dd 09 00 10 18 02 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+------------mgmt->sa - hexdump(len=6): 54 ea a8 16 18 90
+------------mgmt->da - hexdump(len=6): 20 4e 7f da 23 6c
+mgmt::assoc_req
+------------da2 - hexdump(len=46): 10 00 00 00 54 ea a8 16 18 90 20 4e 7f da 23 6c 20 4e 7f da 23 6c 00 00 11 04 00 00 01 c0 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xede64000
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=46): 10 00 00 00 54 ea a8 16 18 90 20 4e 7f da 23 6c 20 4e 7f da 23 6c f0 05 11 04 00 00 01 c0 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 54 ea a8 16 18 90
+ieee802_11ext_mgmt_cb------------mgmt->sa - hexdump(len=6): 54 ea a8 16 18 90
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 54 ea a8 16 18 90
+mgmt::assoc_resp cb
+++++++++1
+||------------sta_add_1
+||------------sta_add_2
+||------------sta_add_10
+||------------sta_add_11_ret:0
+++++++++2
+++++++++3
+nl80211: Event message available
+nl80211: New station 54:ea:a8:16:18:90
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 20 16 d8 f5 e2 a9 ff ff ff ff ff ff b0 4d 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=42): 40 00 00 00 ff ff ff ff ff ff 20 16 d8 f5 e2 a9 ff ff ff ff ff ff c0 4d 00 00 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff b0 08 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff c0 08 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff f0 08 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=30): b0 00 3a 01 20 4e 7f da 23 6c 88 e3 ab 42 1c d9 20 4e 7f da 23 6c 20 09 00 00 01 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+------------mgmt->sa - hexdump(len=6): 88 e3 ab 42 1c d9
+------------mgmt->da - hexdump(len=6): 20 4e 7f da 23 6c
+mgmt::auth
+authentication reply: STA=88:e3:ab:42:1c:d9 auth_alg=0 auth_transaction=2 resp=0 (IE len=0)
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xecc73480
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=30): b0 00 00 00 88 e3 ab 42 1c d9 20 4e 7f da 23 6c 20 4e 7f da 23 6c 80 06 00 00 02 00 00 00
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 88 e3 ab 42 1c d9
+ieee802_11ext_mgmt_cb------------mgmt->sa - hexdump(len=6): 88 e3 ab 42 1c d9
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 88 e3 ab 42 1c d9
+mgmt::auth cb
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=56): 00 00 3a 01 20 4e 7f da 23 6c 88 e3 ab 42 1c d9 20 4e 7f da 23 6c 30 09 01 04 02 00 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame event
+EVENT_RX_MGMT
+------------mgmt->sa - hexdump(len=6): 88 e3 ab 42 1c d9
+------------mgmt->da - hexdump(len=6): 20 4e 7f da 23 6c
+mgmt::assoc_req
+------------da2 - hexdump(len=46): 10 00 00 00 88 e3 ab 42 1c d9 20 4e 7f da 23 6c 20 4e 7f da 23 6c 00 00 11 04 00 00 01 c0 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+*******mlme_freq :0
+------freq: 0
+nl80211: CMD_FRAME freq=2462 wait=0 no_cck=0 no_ack=0 offchanok=0
+nl80211: Frame TX command accepted; cookie 0xecc736c0
+nl80211: Event message available
+nl80211: MLME event 60
+nl80211: MLME event frame - hexdump(len=46): 10 00 00 00 88 e3 ab 42 1c d9 20 4e 7f da 23 6c 20 4e 7f da 23 6c 90 06 11 04 00 00 01 c0 01 08 82 84 8b 96 0c 12 18 24 32 04 30 48 60 6c
+nl80211: Frame TX status event
+EVENT_TX_STATUS
+WLAN_FC_TYPE_MGMT:
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 88 e3 ab 42 1c d9
+ieee802_11ext_mgmt_cb------------mgmt->sa - hexdump(len=6): 88 e3 ab 42 1c d9
+ieee802_11ext_mgmt_cb------------mgmt->da - hexdump(len=6): 88 e3 ab 42 1c d9
+mgmt::assoc_resp cb
+++++++++1
+||------------sta_add_1
+||------------sta_add_2
+||------------sta_add_10
+||------------sta_add_11_ret:0
+++++++++2
+++++++++3
+nl80211: Event message available
+nl80211: New station 88:e3:ab:42:1c:d9
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=148): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff b0 d3 00 06 4d 79 57 69 46 69 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=142): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff c0 d3 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=148): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff d0 d3 00 06 4d 79 57 69 46 69 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=142): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff e0 d3 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=148): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff f0 d3 00 06 4d 79 57 69 46 69 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=142): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff 00 d4 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=148): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff 10 d4 00 06 4d 79 57 69 46 69 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=142): 40 00 00 00 ff ff ff ff ff ff cc 3a 61 99 a8 14 ff ff ff ff ff ff 20 d4 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 08 00 00 00 00 40 dd 09 00 10 18 02 00 00 10 00 00 dd 1e 00 90 4c 33 2d 10 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 05 00 90 4c 04 08 dd 07 00 50 f2 08 00 11 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff d0 0a 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff e0 0a 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff f0 0a 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 00 0b 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 10 0b 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 20 0b 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 60 6c 66 33 b3 0a ff ff ff ff ff ff d0 43 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 60 6c 66 33 b3 0a ff ff ff ff ff ff e0 43 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=126): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0a 5a ff ff ff ff ff ff 90 05 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 60 6c 66 33 b3 0a ff ff ff ff ff ff c0 44 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=126): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0a 5a ff ff ff ff ff ff c0 05 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=126): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 0a 5a ff ff ff ff ff ff d0 05 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 09 00 10 18 02 00 00 00 00 00 dd 1e 00 90 4c 33 2c 18 17 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff a0 88 b4 d9 b1 74 ff ff ff ff ff ff d0 82 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff a0 88 b4 d9 b1 74 ff ff ff ff ff ff e0 82 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff a0 88 b4 d9 b1 74 ff ff ff ff ff ff 00 84 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 09 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff f0 5b 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 00 5c 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 20 5c 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 30 5c 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 50 5c 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 60 5c 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 64 3b e9 26 ff ff ff ff ff ff 00 62 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 1e 64 3b e9 26 ff ff ff ff ff ff 20 62 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 3c 08 17 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 20 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 50 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 60 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 70 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 80 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 90 0d 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 20 00 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 40 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 09 dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=116): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 50 01 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 60 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 09 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 80 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 90 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff b0 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff c0 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff e0 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff f0 5f 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 70 01 00 08 48 6f 6e 6f 72 20 41 50 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 80 01 00 08 48 6f 6e 6f 72 20 41 50 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff a0 02 00 08 48 6f 6e 6f 72 20 41 50 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 30 0f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 40 0f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 50 0f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 60 0f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=191): 40 00 00 00 ff ff ff ff ff ff 88 e3 ab 42 1c d9 ff ff ff ff ff ff 70 0f 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c dd 80 00 50 f2 04 10 4a 00 01 10 10 3a 00 01 00 10 08 00 02 43 88 10 47 00 10 36 95 01 ee 0f 2f 54 cd 88 c5 c9 57 46 68 59 ae 10 54 00 08 00 0a 00 50 f2 04 00 05 10 3c 00 01 01 10 02 00 02 00 00 10 09 00 02 00 00 10 12 00 02 00 00 10 21 00 06 48 55 41 57 45 49 10 23 00 07 48 33 30 2d 54 30 30 10 24 00 07 48 33 30 2d 54 30 30 10 11 00 07 48 33 30 2d 54 30 30 10 49 00 06 00 37 2a 00 01 20 dd 11 50 6f 9a 09 02 02 00 24 00 06 05 00 58 58 04 51 0b
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 22 fa 50 e4 f4 ff ff ff ff ff ff 30 e0 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 22 fa 50 e4 f4 ff ff ff ff ff ff 40 e0 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff b0 02 00 08 72 65 3a 3a 43 61 66 65 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff c0 02 00 08 72 65 3a 3a 43 61 66 65 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 26 c6 54 a8 be ff ff ff ff ff ff 60 e0 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=78): 40 00 00 00 ff ff ff ff ff ff 00 26 c6 54 a8 be ff ff ff ff ff ff 70 e0 00 08 43 4d 43 43 2d 45 44 55 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 26 c6 54 a8 be ff ff ff ff ff ff 80 e0 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 22 fa 50 e4 f4 ff ff ff ff ff ff c0 e0 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 22 fa 50 e4 f4 ff ff ff ff ff ff 00 e1 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 22 fa 50 e4 f4 ff ff ff ff ff ff 10 e1 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 26 c6 54 a8 be ff ff ff ff ff ff 50 e1 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=124): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 00 04 00 08 72 65 3a 3a 43 61 66 65 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=70): 40 00 00 00 ff ff ff ff ff ff 00 26 c6 54 a8 be ff ff ff ff ff ff 80 e2 00 00 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 2d 1a 30 08 17 ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=122): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 10 04 00 06 6c 75 63 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=122): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 20 04 00 06 6c 75 63 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0b dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=122): 40 00 00 00 ff ff ff ff ff ff 00 26 82 b8 2a 82 ff ff ff ff ff ff 50 05 00 06 6c 75 63 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 2d 1a 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a dd 09 00 10 18 02 00 10 01 00 00 dd 1e 00 90 4c 33 2c 18 1b ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 40 62 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 50 62 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 60 62 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=150): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 70 62 00 0a 6d 65 6e 67 64 61 73 68 65 6e 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff d0 63 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 08 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 00 64 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 10 64 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0a 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 30 64 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 40 64 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0b 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Event message available
+nl80211: MLME event 59
+nl80211: MLME event frame - hexdump(len=140): 40 00 00 00 ff ff ff ff ff ff 54 ea a8 16 18 90 ff ff ff ff ff ff 70 64 00 00 01 04 02 04 0b 16 32 08 0c 12 18 24 30 48 60 6c 03 01 0c 2d 1a 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 04 00 00 00 04 6b 07 02 ff ff ff ff ff ff dd 09 00 10 18 02 01 00 00 00 00 dd 1e 00 90 4c 33 20 00 1a ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 07 00 50 f2 08 00 13 00
+nl80211: Frame event
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event message available
+EVENT_RX_MGMT
+nl80211: Beacon event

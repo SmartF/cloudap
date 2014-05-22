@@ -6436,6 +6436,7 @@ static int nl80211_send_eapol_data(struct i802_bss *bss,
 				   const u8 *addr, const u8 *data,
 				   size_t data_len)
 {
+	printf("-----------nl80211_send_eapol_data\n");
 	struct sockaddr_ll ll;
 	int ret;
 
@@ -6452,6 +6453,7 @@ static int nl80211_send_eapol_data(struct i802_bss *bss,
 	os_memcpy(ll.sll_addr, addr, ETH_ALEN);
 	ret = sendto(bss->drv->eapol_tx_sock, data, data_len, 0,
 		     (struct sockaddr *) &ll, sizeof(ll));
+	printf("ret %d\n",ret);
 	if (ret < 0)
 		wpa_printf(MSG_ERROR, "nl80211: EAPOL TX: %s",
 			   strerror(errno));
@@ -6466,6 +6468,7 @@ static int wpa_driver_nl80211_hapd_send_eapol(
 	void *priv, const u8 *addr, const u8 *data,
 	size_t data_len, int encrypt, const u8 *own_addr, u32 flags)
 {
+	printf("----------wpa_driver_nl80211_hapd_send_eapol\n");
 	struct i802_bss *bss = priv;
 	struct wpa_driver_nl80211_data *drv = bss->drv;
 	struct ieee80211_hdr *hdr;
@@ -6531,6 +6534,8 @@ static int wpa_driver_nl80211_sta_set_flags(void *priv, const u8 *addr,
 					    int total_flags,
 					    int flags_or, int flags_and)
 {
+	printf("wpa_driver_nl80211_sta_set_flags total_flags %d,flags_or %d,flags_and %d\n", total_flags,
+					     flags_or,  flags_and);
 	struct i802_bss *bss = priv;
 	struct wpa_driver_nl80211_data *drv = bss->drv;
 	struct nl_msg *msg, *flags = NULL;
