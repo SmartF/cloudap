@@ -588,7 +588,7 @@ static void nl80211_recv_beacons(int sock, void *eloop_ctx, void *handle)
 {
 	struct nl80211_wiphy_data *w = eloop_ctx;
 
-	wpa_printf(MSG_EXCESSIVE, "nl80211: Beacon event message available");
+	//wpa_printf(MSG_EXCESSIVE, "nl80211: Beacon event message available");
 
 	nl_recvmsgs(handle, w->nl_cb);
 }
@@ -1468,9 +1468,9 @@ static void mlme_event(struct wpa_driver_nl80211_data *drv,
 		return;
 	}
 
-	wpa_printf(MSG_DEBUG, "nl80211: MLME event %d", cmd);
-	wpa_hexdump(MSG_MSGDUMP, "nl80211: MLME event frame",
-		    nla_data(frame), nla_len(frame));
+	//wpa_printf(MSG_DEBUG, "nl80211: MLME event %d", cmd);
+	//wpa_hexdump(MSG_MSGDUMP, "nl80211: MLME event frame",
+	//	    nla_data(frame), nla_len(frame));
 
 	switch (cmd) {
 	case NL80211_CMD_AUTHENTICATE:
@@ -2371,7 +2371,7 @@ static void wpa_driver_nl80211_event_receive(int sock, void *eloop_ctx,
 {
 	struct nl_cb *cb = eloop_ctx;
 
-	wpa_printf(MSG_DEBUG, "nl80211: Event message available");
+	//wpa_printf(MSG_DEBUG, "nl80211: Event message available");
 
 	nl_recvmsgs(handle, cb);
 }
@@ -3142,8 +3142,8 @@ static int nl80211_register_frame(struct i802_bss *bss,
 
 	wpa_printf(MSG_DEBUG, "nl80211: Register frame type=0x%x nl_handle=%p",
 		   type, nl_handle);
-	wpa_hexdump(MSG_DEBUG, "nl80211: Register frame match",
-		    match, match_len);
+	//wpa_hexdump(MSG_DEBUG, "nl80211: Register frame match",
+	//	    match, match_len);
 
 	nl80211_cmd(drv, msg, 0, NL80211_CMD_REGISTER_ACTION);
 
@@ -5367,7 +5367,7 @@ static int wpa_driver_nl80211_send_frame(struct i802_bss *bss,
 					 unsigned int freq, int no_cck,
 					 int offchanok, unsigned int wait_time)
 {
-	printf("------freq: %d\n",freq);
+	//printf("------freq: %d\n",freq);
 	struct wpa_driver_nl80211_data *drv = bss->drv;
 	u64 cookie;
 
@@ -5390,7 +5390,7 @@ static int wpa_driver_nl80211_send_mlme_freq(struct i802_bss *bss,
 					     int offchanok,
 					     unsigned int wait_time)
 {
-	printf("*******mlme_freq :%d\n",freq);
+	//printf("*******mlme_freq :%d\n",freq);
 	struct wpa_driver_nl80211_data *drv = bss->drv;
 	struct ieee80211_mgmt *mgmt;
 	int encrypt = 1;
@@ -5761,20 +5761,17 @@ static int wpa_driver_nl80211_sta_add(void *priv,
 		NLA_PUT_U16(msg, NL80211_ATTR_STA_LISTEN_INTERVAL,
 			    params->listen_interval);
 	}
-	printf("||------------sta_add_1\n");
 	if (params->ht_capabilities) {
 		NLA_PUT(msg, NL80211_ATTR_HT_CAPABILITY,
 			sizeof(*params->ht_capabilities),
 			params->ht_capabilities);
 	}
-	printf("||------------sta_add_2\n");
 	os_memset(&upd, 0, sizeof(upd));
 	upd.mask = sta_flags_nl80211(params->flags);
 	upd.set = upd.mask;
 	NLA_PUT(msg, NL80211_ATTR_STA_FLAGS2, sizeof(upd), &upd);
 
 	if (params->flags & WPA_STA_WMM) {
-		printf("||------------sta_add_3\n");
 		wme = nlmsg_alloc();
 		if (!wme)
 			goto nla_put_failure;
@@ -5787,9 +5784,7 @@ static int wpa_driver_nl80211_sta_add(void *priv,
 		if (nla_put_nested(msg, NL80211_ATTR_STA_WME, wme) < 0)
 			goto nla_put_failure;
 	}
-	printf("||------------sta_add_10\n");
 	ret = send_and_recv_msgs(drv, msg, NULL, NULL);
-	printf("||------------sta_add_11_ret:%d\n",ret);
 	msg = NULL;
 	if (ret)
 		wpa_printf(MSG_DEBUG, "nl80211: NL80211_CMD_%s_STATION "
@@ -6453,7 +6448,6 @@ static int nl80211_send_eapol_data(struct i802_bss *bss,
 	os_memcpy(ll.sll_addr, addr, ETH_ALEN);
 	ret = sendto(bss->drv->eapol_tx_sock, data, data_len, 0,
 		     (struct sockaddr *) &ll, sizeof(ll));
-	printf("ret %d\n",ret);
 	if (ret < 0)
 		wpa_printf(MSG_ERROR, "nl80211: EAPOL TX: %s",
 			   strerror(errno));
@@ -6534,8 +6528,8 @@ static int wpa_driver_nl80211_sta_set_flags(void *priv, const u8 *addr,
 					    int total_flags,
 					    int flags_or, int flags_and)
 {
-	printf("wpa_driver_nl80211_sta_set_flags total_flags %d,flags_or %d,flags_and %d\n", total_flags,
-					     flags_or,  flags_and);
+	//printf("wpa_driver_nl80211_sta_set_flags total_flags %d,flags_or %d,flags_and %d\n", total_flags,
+	//				     flags_or,  flags_and);
 	struct i802_bss *bss = priv;
 	struct wpa_driver_nl80211_data *drv = bss->drv;
 	struct nl_msg *msg, *flags = NULL;
